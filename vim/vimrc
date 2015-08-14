@@ -1,5 +1,6 @@
-" Set syntax 
+" Set syntax
 syntax on
+
 " indent stuff
 set autoindent
 set copyindent
