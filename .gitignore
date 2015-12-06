@@ -1,4 +1,4 @@
-vim/plugged/*
+#vim/plugged/*
 vim/backups/*
 vim/undo/*
 vim/swaps/*
