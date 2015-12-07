@@ -1,0 +1,19 @@
+alias sudo='sudo '
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
+alias mysqld=/usr/local/mysql/support-files/mysql.server
+alias apache2=apachectl
+
+# My quick navigation
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias d='cd ~/Desktop/'
+alias p='cd ~/projects && ls'
+alias l='ls -l'
+alias rm="rm -i"
+alias s="subl -n ./"
+alias subln="subl -n"
+alias upme='source ~/.bash_profile'
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ~="cd ~"
