@@ -10,9 +10,9 @@ out into each machine.
 
 ### Quick Installation
 
-The following command will get the pretty environment at the minimal effort
+I do the full installation when I am on the MAC, but the following command will get the pretty environment at the minimal effort. I use this most of the time on Linux server. 
 
-```
+```bash
 wget https://raw.githubusercontent.com/kennith/dotfiles/master/.bash_prompt -O ~/.bash_prompt
 echo "source ~/.bash_prompt" >> ~/.bashrc
 
@@ -31,7 +31,7 @@ source ~/.bashrc
 ```
 
 Add this if you are to do this in script
-```
+```bash
 #!/bin/bash
 ```
 

@@ -1,6 +1,1 @@
-#vim/plugged/*
-vim/backups/*
-vim/undo/*
-vim/swaps/*
-vim/viminfo
 .netrwhist
