@@ -31,13 +31,15 @@ source ~/.bashrc
 ```
 
 Add this if you are to do this in script
+
 ```bash
 #!/bin/bash
 ```
 
 Run ``` PlugInstall ``` at Vim. (Git is required.)
 
-## TODO
+### TODO
+
 Add a bash script to backup the current dotfiles and link the available 
 dotfiles form home directory to the checkout path.
 
