@@ -26,6 +26,7 @@ mkdir ~/.vim/colors
 
 wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -O .vim/autoload/plug.vim
 wget https://raw.githubusercontent.com/gf3/dotfiles/v1.0.0/.vim/colors/molotov.vim -O ~/.vim/colors/molotov.vim
+wget https://raw.githubusercontent.com/kennith/dotfiles/master/.tmux.conf -O ~/.tmux.conf
 
 source ~/.bashrc
 ```
