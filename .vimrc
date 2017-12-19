@@ -389,7 +389,7 @@ augroup END
 call plug#begin('~/.vim/plugged')
 
 Plug 'ap/vim-css-color'
-Plug 'bling/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'FelikZ/ctrlp-py-matcher'
 Plug 'guns/vim-clojure-static'
 Plug 'joker1007/vim-ruby-heredoc-syntax'
