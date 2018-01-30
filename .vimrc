@@ -12,7 +12,8 @@ set nocompatible
 set t_Co=256
 set background=dark
 syntax on
-colorscheme molotov
+colorscheme slate
+hi CursorLine term=bold cterm=bold ctermbg=242
 " }}}
 
 " Mapleader {{{
