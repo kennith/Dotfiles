@@ -13,7 +13,9 @@ set t_Co=256
 set background=dark
 syntax on
 colorscheme slate
-hi CursorLine term=bold cterm=bold ctermbg=242
+hi Normal     ctermbg=0                                                                                             
+hi NonText    ctermbg=0
+hi CursorLine ctermbg=233
 " }}}
 
 " Mapleader {{{
