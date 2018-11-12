@@ -12,10 +12,13 @@ set nocompatible
 set t_Co=256
 set background=dark
 syntax on
-colorscheme slate
-hi Normal     ctermbg=0                                                                                             
-hi NonText    ctermbg=0
-hi CursorLine ctermbg=233
+colorscheme molotov
+hi Normal       ctermbg=0                                                                                           
+hi NonText      ctermbg=0                                                                           
+hi CursorLine   cterm=none  ctermbg=233                                                             
+hi CursorLineNr ctermbg=233                                                                                         
+hi Colorcolumn  ctermbg=233                                                                         
+hi LineNr       ctermbg=0  
 " }}}
 
 " Mapleader {{{
