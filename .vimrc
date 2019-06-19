@@ -12,7 +12,7 @@ set nocompatible
 set t_Co=256
 set background=dark
 syntax on
-colorscheme molotov
+colorscheme torte
 hi Normal       ctermbg=0                                                                                           
 hi NonText      ctermbg=0                                                                           
 hi CursorLine   cterm=none  ctermbg=233                                                             
