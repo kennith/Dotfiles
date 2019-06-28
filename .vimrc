@@ -12,13 +12,13 @@ set nocompatible
 set t_Co=256
 set background=dark
 syntax on
-colorscheme torte
+
 hi Normal       ctermbg=0                                                                                           
 hi NonText      ctermbg=0                                                                           
 hi CursorLine   cterm=none  ctermbg=233                                                             
-hi CursorLineNr ctermbg=233                                                                                         
+hi CursorLineNr ctermbg=233 ctermfg=8                                                                                        
 hi Colorcolumn  ctermbg=233                                                                         
-hi LineNr       ctermbg=0  
+hi LineNr       ctermbg=0   ctermfg=8
 " }}}
 
 " Mapleader {{{
