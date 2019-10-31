@@ -1,20 +1,23 @@
-alias sudo='sudo '
-alias mysql=/usr/local/mysql/bin/mysql
-alias mysqladmin=/usr/local/mysql/bin/mysqladmin
-alias mysqld=/usr/local/mysql/support-files/mysql.server
-alias apache2=apachectl
-
-# My quick navigation
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-alias d='cd ~/Desktop/'
-alias p='cd ~/projects && ls'
-alias l='ls -l'
-alias rm="rm -i"
-alias s="subl -n ./"
-alias subln="subl -n"
-alias upme='source ~/.bash_profile'
-
 # This is very helpful
 alias ..="cd .."
-alias ...="cd ../.."
 alias ~="cd ~"
+
+alias c='clear'
+alias l="ls -lFG"             # List all files colorized in long format
+alias p='vendor/bin/phpunit'
+
+alias artisan="$(which php) artisan"
+alias mfs="artisan migrate:fresh --seed"
+alias nah="git reset --hard && git clean -fd"
+alias pf="p --group=failings"
+alias subl="${HOME}/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias squash="git rebase -i master"
+alias st="subl ."
+alias wip="git commit -a -m 'WIP'"
+
+alias aws-su=asp
+alias aws-whoami=agp
+
+# List all files colorized in long format, including dot files
+alias la="ls -laFG"
+alias ls="command ls -G"
