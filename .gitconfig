@@ -1,3 +1,6 @@
+[user]
+	name = Kennith Leung
+	email = kennith.leung@gmail.com
 [alias]
 	co = checkout
 	br = branch
@@ -11,9 +14,6 @@
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
-[user]
-	name = Kennith Leung
-	email = kennith.leung@gmail.com
 [filter "hawser"]
 	clean = git hawser clean %f
 	smudge = git hawser smudge %f
@@ -22,3 +22,6 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
+[core]
+  pager = less -F -X
+  excludesfile = ~/.gitignore_global
