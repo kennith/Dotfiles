@@ -1,21 +1,29 @@
-## dotfiles
+# dotfiles
 
-My dotfiles, hopefully it will run across all platform (unlikely).
+As same as other dotfiles, it's personal. I use `zsh` and `oh-my-zsh`. 
 
-### Installation
+## Installation
 
-My idea of using dotfiles is instead of replacing the current existing dotfiles,
-let each dotfile link from the home directory to the dotfiles that are checked
-out into each machine. 
+### oh-my-zsh
+```zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+wget https://raw.githubusercontent.com/kennith/dotfiles/master/.gitignore_global -O ~/.oh-my-zsh/custom/themes/robbyrussell.zsh-theme
+```
 
-### Quick Installation
+### Homebrew
+```zsh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
-I do the full installation when I am on the MAC, but the following command will get the pretty environment at the minimal effort. I use this most of the time on Linux server. 
+### Git
+```zsh
+wget https://raw.githubusercontent.com/kennith/dotfiles/master/.gitignore_global -O ~/.gitignore_global
+wget https://raw.githubusercontent.com/kennith/dotfiles/master/.gitconfig -O ~/.gitconfig
+```
 
-```bash
-wget https://raw.githubusercontent.com/kennith/dotfiles/master/.bash_prompt -O ~/.bash_prompt
-echo "source ~/.bash_prompt" >> ~/.bashrc
+### VIm 
 
+```zsh
 wget https://raw.githubusercontent.com/kennith/dotfiles/master/.vimrc -O ~/.vimrc
 mkdir ~/.vim
 mkdir ~/.vim/autoload
@@ -25,22 +33,17 @@ mkdir ~/.vim/undo
 mkdir ~/.vim/colors
 
 wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -O .vim/autoload/plug.vim
-wget https://raw.githubusercontent.com/gf3/dotfiles/v1.0.0/.vim/colors/molotov.vim -O ~/.vim/colors/molotov.vim
+```
+
+Run `PlugInstall` in Vim. (Git is required.)
+
+```zsh
+cp ~/.vim/plugged/nord-vim/colors/nord.vim ~/.vim/colors/nord.vim
+```
+
+### Tmux
+
+```zsh
 wget https://raw.githubusercontent.com/kennith/dotfiles/master/.tmux.conf -O ~/.tmux.conf
-
-source ~/.bashrc
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
-
-Add this if you are to do this in script
-
-```bash
-#!/bin/bash
-```
-
-Run ``` PlugInstall ``` at Vim. (Git is required.)
-
-### TODO
-
-Add a bash script to backup the current dotfiles and link the available 
-dotfiles form home directory to the checkout path.
-

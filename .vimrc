@@ -10,15 +10,9 @@ set nocompatible
 
 " Syntax highlighting {{{
 set t_Co=256
-set background=dark
+set background=light
 syntax on
-
-hi Normal       ctermbg=0                                                                                           
-hi NonText      ctermbg=0                                                                           
-hi CursorLine   cterm=none  ctermbg=233                                                             
-hi CursorLineNr ctermbg=233 ctermfg=8                                                                                        
-hi Colorcolumn  ctermbg=233                                                                         
-hi LineNr       ctermbg=0   ctermfg=8
+colorscheme nord 
 " }}}
 
 " Mapleader {{{
@@ -42,7 +36,7 @@ set esckeys " Allow cursor keys in insert mode
 set expandtab " Expand tabs to spaces
 set foldcolumn=0 " Column to show folds
 set foldenable " Enable folding
-set foldlevel=1 " Close secondary folds by default
+set foldlevel=3 " Close secondary folds by default
 set foldmethod=syntax " Syntax are used to specify folds
 set foldminlines=0 " Allow folding single lines
 set foldnestmax=5 " Set max fold nesting level
@@ -68,7 +62,7 @@ set lispwords+=defpartial,defpage " Noir core
 set lispwords+=defaction,deffilter,defview,defsection " Ciste core
 set lispwords+=describe,it " Speclj TDD/BDD
 set magic " Enable extended regexes
-"set mouse=a " Enable mouse in all in all modes
+set mouse=a " Enable mouse in all in all modes
 set noerrorbells " Disable error bells
 set nojoinspaces " Only insert single space after a '.', '?' and '!' with a join command
 set noshowmode " Don't show the current mode (airline.vim takes care of us)
@@ -394,6 +388,7 @@ augroup END
 " Load plugins {{{
 call plug#begin('~/.vim/plugged')
 
+Plug 'arcticicestudio/nord-vim'
 Plug 'ap/vim-css-color'
 Plug 'itchyny/lightline.vim'
 Plug 'FelikZ/ctrlp-py-matcher'
@@ -428,6 +423,11 @@ Plug 'wavded/vim-stylus',      { 'for': 'stylus' }
 Plug 'wlangstroth/vim-racket'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-notes'
+Plug 'jwalton512/vim-blade'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 " }}}
+"
+
+let g:lightline = { 'colorscheme': 'nord', }
