@@ -3,17 +3,22 @@ alias ..="cd .."
 alias ~="cd ~"
 
 alias c='clear'
+#alias d="$(which php) artisan dusk"
+alias d="$(which docker)"
 alias l="ls -lFG"             # List all files colorized in long format
-alias p='vendor/bin/phpunit'
+#alias p='artisan test'
+alias p="$(which php) vendor/bin/phpunit"
+alias r="cd ~/Repositories"
 
 alias artisan="$(which php) artisan"
-alias mfs="artisan migrate:fresh --seed"
 alias nah="git reset --hard && git clean -fd"
-alias pf="p --group=failings"
-alias subl="${HOME}/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias mfs="artisan migrate:fresh --seed"
+alias df="d --group=fails"
+alias pf="p --group=fails"
+alias wip="git commit -a -m 'wip'"
 alias squash="git rebase -i master"
-alias st="subl ."
-alias wip="git commit -a -m 'WIP'"
+alias pest="$(which php) vendor/bin/pest"
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 alias aws-su=asp
 alias aws-whoami=agp
@@ -21,3 +26,5 @@ alias aws-whoami=agp
 # List all files colorized in long format, including dot files
 alias la="ls -laFG"
 alias ls="command ls -G"
+
+alias tf="$(which terraform)"
